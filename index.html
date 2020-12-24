@@ -85,8 +85,6 @@
     />
   </head>
   <body>
-    <header></header>
-
     <main role="main">
       <section class="jumbotron text-center">
         <div class="container">
@@ -100,6 +98,9 @@
             <a id="villainButton" class="btn btn-danger my-2">Villains</a>
           </p>
         </div>
+        <form onsubmit="return false">
+          <input type="text" id="searchbar" placeholder="Search" />
+        </form>
       </section>
     </main>
 
@@ -107,7 +108,7 @@
     <div class="container">
       <div class="row first-row">
         <!-- WOLVERINE -->
-        <div class="col-sm">
+        <div class="col-sm-4 entire-card">
           <div class="scene">
             <!-- front -->
             <div class="card-whole">
@@ -159,7 +160,7 @@
         <!-- END WOLVERINE -->
 
         <!-- SPIDERMAN -->
-        <div class="col-sm">
+        <div class="col-sm-4 entire-card">
           <div class="scene">
             <!-- front -->
             <div class="card-whole">
@@ -212,7 +213,7 @@
         <!-- END SPIDERMAN -->
 
         <!-- THOR -->
-        <div class="col-sm">
+        <div class="col-sm-4 entire-card">
           <div class="scene">
             <!-- front -->
             <div class="card-whole">
@@ -270,9 +271,9 @@
       <!-- SECOND ROW OF CARDS -->
       <!-- CARDS -->
 
-      <div class="row">
+      <div class="row second-row">
         <!-- Deadpool -->
-        <div class="col-sm">
+        <div class="col-sm-4 entire-card">
           <div class="scene">
             <!-- front -->
             <div class="card-whole">
@@ -325,7 +326,7 @@
         <!-- END THOR -->
 
         <!-- IRONMAN -->
-        <div class="col-sm">
+        <div class="col-sm-4 entire-card">
           <div class="scene">
             <!-- front -->
             <div class="card-whole">
@@ -378,7 +379,62 @@
         <!-- END IRONMAN -->
 
         <!-- MILES MORALES -->
-        <div class="col-sm">
+        <div id="miles" class="col-sm-4 entire-card">
+          <div class="scene">
+            <!-- front -->
+            <div class="card-whole">
+              <div class="card-face card-front">
+                <div class="card-body">
+                  <h3>Spider-Man: Miles Morales</h3>
+                  <img
+                    class="card-img"
+                    src="https://nerdist.com/wp-content/uploads/2019/01/milesmorales.0.0.jpg"
+                  />
+                  <br />
+                  <p><strong>Powers + Abilities</strong></p>
+                  <ul>
+                    <li>Spider Physiology</li>
+                    <li>Bio-Electrokinesis: Venom Blast</li>
+                    <li>Spider-Camouflage</li>
+                  </ul>
+
+                  <br />
+                  <p><strong>Height: </strong>5'8"</p>
+                  <p><strong>Weight: </strong>160lbs</p>
+                </div>
+              </div>
+              <!-- end front -->
+              <!-- back -->
+              <div class="card-face card-back">
+                <div class="card-body">
+                  <h3>The Prowler</h3>
+                  <img
+                    class="card-img"
+                    src="https://seanmills6.files.wordpress.com/2019/10/two-prowlers-11.jpg"
+                  />
+                  <br />
+
+                  <p><strong>Powers + Abilities</strong></p>
+                  <ul>
+                    <li>Master Thief</li>
+                    <li>Expert Marksman</li>
+                    <li>Expert Martial Artist</li>
+                  </ul>
+                  <br />
+                  <p><strong>Height: </strong>5'11"</p>
+                  <p><strong>Weight: </strong>180lbs</p>
+                </div>
+              </div>
+            </div>
+            <!-- end back -->
+          </div>
+        </div>
+        <!-- END MILES MORALES -->
+      </div>
+      <br />
+      <div class="row third-row">
+        <!-- MILES MORALES -->
+        <div class="col-sm-4 entire-card">
           <div class="scene">
             <!-- front -->
             <div class="card-whole">
@@ -447,19 +503,17 @@
           >
             &copy;Wes Griffin.</a
           >
+          Data provided by Marvel. © 2014 Marvel
         </p>
       </div>
     </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+
     <script src="index.js"></script>
   </body>
 </html>
