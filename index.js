@@ -86,7 +86,7 @@ form.submit(function () {
   const userGivenHero = $("#searchbar").val();
 
   const heroRequest = $.get(
-    "http://gateway.marvel.com/v1/public/characters?ts=1609011803321&apikey=b138b6385cae17bddf0a3657ecf6e166&hash=1e3919c6ee1bde443c8ca31977cdf615&name=" +
+    "https://gateway.marvel.com/v1/public/characters?ts=1609011803321&apikey=b138b6385cae17bddf0a3657ecf6e166&hash=1e3919c6ee1bde443c8ca31977cdf615&name=" +
       userGivenHero
   );
 
