@@ -55,6 +55,14 @@
   border: solid rgb(235, 235, 235) 1px;
 }
 
+.card-img-back {
+  width: 150px;
+  height: 250px;
+  margin-bottom: 10px;
+  border: solid rgb(235, 235, 235) 1px;
+  align-items: center;
+}
+
 h3 {
   color: rgb(235, 235, 235);
   font-size: 15px;
@@ -113,4 +121,9 @@ footer p {
 
 .footer-text {
   color: black;
+}
+
+.description {
+  min-width: 100%;
+  max-width: 100%;
 }
