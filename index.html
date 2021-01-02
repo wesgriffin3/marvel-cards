@@ -89,29 +89,29 @@
       <section class="jumbotron text-center">
         <div class="container">
           <h1>Marvel Trading Cards</h1>
-          <p class="lead text-muted">
-            Double sided trading cards with your favorite superheroes, along
-            with one of their foes on the opposite side.
-          </p>
+          <h5 class="jumbo-text">
+            Double sided trading cards with your favorite hero on the front, and
+            a recently featured comic on the back.
+          </h5>
           <p>
             <a id="heroButton" class="btn btn-primary my-2">Heroes</a>
             <a id="villainButton" class="btn btn-danger my-2">Villains</a>
           </p>
+          <form onsubmit="return false">
+            <input type="text" id="searchbar" placeholder="Search" />
+          </form>
         </div>
-        <form onsubmit="return false">
-          <input type="text" id="searchbar" placeholder="Search" />
-        </form>
       </section>
     </main>
 
     <!-- CARDS -->
     <!-- FIRST ROW OF CARDS -->
     <div class="container">
-      <div class="row first-row">
-        <!-- WOLVERINE -->
+      <div class="row">
+        <!-- FRONT SIDE
         <div class="col-sm-4 entire-card">
           <div class="scene">
-            <!-- front -->
+
             <div class="card-whole">
               <div class="card-face card-front">
                 <div class="card-body">
@@ -131,9 +131,9 @@
                   <p><strong>Height: </strong>5'3"</p>
                   <p><strong>Weight: </strong>300lbs</p>
                 </div>
-              </div>
-              <!-- end front -->
-              <!-- back -->
+              </div> -->
+
+        <!-- back 
               <div class="card-face card-back">
                 <div class="card-body">
                   <h3>Sabretooth</h3>
@@ -155,284 +155,10 @@
                 </div>
               </div>
             </div>
-            <!-- end back -->
+            BACK SIDE 
           </div>
-        </div>
-        <!-- END WOLVERINE -->
-
-        <!-- SPIDERMAN -->
-        <div class="col-sm-4 entire-card">
-          <div class="scene">
-            <!-- front -->
-            <div class="card-whole">
-              <div class="card-face card-front">
-                <div class="card-body">
-                  <h3>Spider-Man: Peter Parker</h3>
-                  <img
-                    class="card-img"
-                    src="https://www.telegraph.co.uk/content/dam/film/spiderman.jpg?imwidth=450"
-                  />
-                  <br />
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Wall-Crawling/Adhesive Stick</li>
-                    <li>Spider-Sense</li>
-                    <li>Biochemistry Background</li>
-                  </ul>
-
-                  <br />
-                  <p><strong>Height: </strong>5'10"</p>
-                  <p><strong>Weight: </strong>167lbs</p>
-                </div>
-              </div>
-              <!-- end front -->
-              <!-- back -->
-              <div class="card-face card-back">
-                <div class="card-body">
-                  <h3>Green Goblin</h3>
-                  <img
-                    class="card-img"
-                    src="https://static.wikia.nocookie.net/spiderman-animated/images/6/68/879789879978.jpg/revision/latest?cb=20150821020039"
-                  />
-                  <br />
-
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Psychotic Strengths</li>
-                    <li>Superhuman Agility</li>
-                    <li>Superhuman Reflexes</li>
-                  </ul>
-                  <br />
-                  <p><strong>Height: </strong>5'11", In Armor: 6'4"</p>
-                  <p><strong>Weight: </strong>185 lbs, In Armor: 385 lbs</p>
-                </div>
-              </div>
-            </div>
-            <!-- end back -->
-          </div>
-        </div>
-        <!-- END SPIDERMAN -->
-
-        <!-- THOR -->
-        <div class="col-sm-4 entire-card">
-          <div class="scene">
-            <!-- front -->
-            <div class="card-whole">
-              <div class="card-face card-front">
-                <div class="card-body">
-                  <h3>Thor "God of Thunder"</h3>
-                  <img
-                    class="card-img"
-                    src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/thorragnarok-herocomplex-print10-frontpage-700x314.jpg"
-                  />
-                  <br />
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Asgardian/God Physiology</li>
-                    <li>Allspeak</li>
-                    <li>Master Combatant</li>
-                  </ul>
-
-                  <br />
-                  <p><strong>Height: </strong>6'6"</p>
-                  <p><strong>Weight: </strong>640lbs</p>
-                </div>
-              </div>
-              <!-- end front -->
-              <!-- back -->
-              <div class="card-face card-back">
-                <div class="card-body">
-                  <h3>Hela</h3>
-                  <img
-                    class="card-img"
-                    src="https://oyster.ignimgs.com/wordpress/stg.ign.com/2017/04/hela-thor-2.jpg"
-                  />
-                  <br />
-
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Supernatural Empowerment</li>
-                    <li>Weapon Manifestation</li>
-                    <li>Necromancy</li>
-                  </ul>
-                  <br />
-                  <p><strong>Height: </strong>7'0"</p>
-                  <p><strong>Weight: </strong>500lbs</p>
-                </div>
-              </div>
-            </div>
-            <!-- end back -->
-          </div>
-        </div>
-        <!-- END THOR -->
+        </div> -->
       </div>
-
-      <!-- END ROW OF FIRST CARDS -->
-      <br />
-      <!-- SECOND ROW OF CARDS -->
-
-      <div class="row second-row">
-        <!-- Deadpool -->
-        <div class="col-sm-4 entire-card">
-          <div class="scene">
-            <!-- front -->
-            <div class="card-whole">
-              <div class="card-face card-front">
-                <div class="card-body">
-                  <h3>Deadpool</h3>
-                  <img
-                    class="card-img"
-                    src="https://static.wikia.nocookie.net/marvelanimated/images/5/57/Deadpool_Series_Test_Footage.jpg/revision/latest?cb=20180509024811"
-                  />
-                  <br />
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Immortality</li>
-                    <li>Superior Marksmanship</li>
-                    <li>Hand-to-Hand Combat</li>
-                  </ul>
-
-                  <br />
-                  <p><strong>Height: </strong>6'2"</p>
-                  <p><strong>Weight: </strong>210lbs</p>
-                </div>
-              </div>
-              <!-- end front -->
-              <!-- back -->
-              <div class="card-face card-back">
-                <div class="card-body">
-                  <h3>T-Ray</h3>
-                  <img
-                    class="card-img"
-                    src="https://lh3.googleusercontent.com/proxy/1e-t0FJbO5JIRiyPbK56Q_onydYrP0zFtV6HA5HgBtueIVGvNXXKZz-rZQhGiECCduYV720f-M9a5wyfxqUjHkv96amf5uhU7TeL1yFu"
-                  />
-                  <br />
-
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Teleportation</li>
-                    <li>Physical transformation</li>
-                    <li>Energy bursts</li>
-                  </ul>
-                  <br />
-                  <p><strong>Height: </strong>6'9"</p>
-                  <p><strong>Weight: </strong>361lbs</p>
-                </div>
-              </div>
-            </div>
-            <!-- end back -->
-          </div>
-        </div>
-        <!-- END THOR -->
-
-        <!-- IRONMAN -->
-        <div class="col-sm-4 entire-card">
-          <div class="scene">
-            <!-- front -->
-            <div class="card-whole">
-              <div class="card-face card-front">
-                <div class="card-body">
-                  <h3>Iron Man</h3>
-                  <img
-                    class="card-img"
-                    src="https://media.comicbook.com/2020/02/iron-man-marvel-comics-1209184-1280x0.jpeg"
-                  />
-                  <br />
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Super-Genius Intelligence</li>
-                    <li>Master Engineer & Tactician</li>
-                    <li>Skilled Marksman & Combatant</li>
-                  </ul>
-
-                  <br />
-                  <p><strong>Height: </strong>6'1", In Suit: 6'6"</p>
-                  <p><strong>Weight: </strong>225lbs, In Suit: 425lbs</p>
-                </div>
-              </div>
-              <!-- end front -->
-              <!-- back -->
-              <div class="card-face card-back">
-                <div class="card-body">
-                  <h3>Mandarin</h3>
-                  <img
-                    class="card-img"
-                    src="https://img1.looper.com/img/gallery/the-real-mandarin-has-a-future-in-the-mcu-teases-kevin-feige/intro-1558019083.jpg"
-                  />
-                  <br />
-
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Chi Manipulation</li>
-                    <li>Super-Genius Intelligence</li>
-                    <li>Various Martial Arts</li>
-                  </ul>
-                  <br />
-                  <p><strong>Height: </strong>6'2"</p>
-                  <p><strong>Weight: </strong>215lbs</p>
-                </div>
-              </div>
-            </div>
-            <!-- end back -->
-          </div>
-        </div>
-        <!-- END IRONMAN -->
-
-        <!-- MILES MORALES -->
-        <div id="miles" class="col-sm-4 entire-card">
-          <div class="scene">
-            <!-- front -->
-            <div class="card-whole">
-              <div class="card-face card-front">
-                <div class="card-body">
-                  <h3>Spider-Man: Miles Morales</h3>
-                  <img
-                    class="card-img"
-                    src="https://nerdist.com/wp-content/uploads/2019/01/milesmorales.0.0.jpg"
-                  />
-                  <br />
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Spider Physiology</li>
-                    <li>Bio-Electrokinesis: Venom Blast</li>
-                    <li>Spider-Camouflage</li>
-                  </ul>
-
-                  <br />
-                  <p><strong>Height: </strong>5'8"</p>
-                  <p><strong>Weight: </strong>160lbs</p>
-                </div>
-              </div>
-              <!-- end front -->
-              <!-- back -->
-              <div class="card-face card-back">
-                <div class="card-body">
-                  <h3>The Prowler</h3>
-                  <img
-                    class="card-img"
-                    src="https://seanmills6.files.wordpress.com/2019/10/two-prowlers-11.jpg"
-                  />
-                  <br />
-
-                  <p><strong>Powers + Abilities</strong></p>
-                  <ul>
-                    <li>Master Thief</li>
-                    <li>Expert Marksman</li>
-                    <li>Expert Martial Artist</li>
-                  </ul>
-                  <br />
-                  <p><strong>Height: </strong>5'11"</p>
-                  <p><strong>Weight: </strong>180lbs</p>
-                </div>
-              </div>
-            </div>
-            <!-- end back -->
-          </div>
-        </div>
-        <!-- END MILES MORALES -->
-      </div>
-      <br />
-      <div class="row third-row"></div>
     </div>
     <!-- END CARDS -->
     <!-- END SECOND ROW OF CARDS -->

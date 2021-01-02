@@ -7,11 +7,6 @@ const cardWhole = $(".card-whole");
 
 const btnGroup = $(".btn-group");
 
-heroButton.click(function () {
-  cardWhole.removeClass("flipped");
-  btnGroup.style.visibility = "visible";
-});
-
 $(".card-whole").hover(
   function () {
     $(this).addClass("flipped");
@@ -21,16 +16,12 @@ $(".card-whole").hover(
   }
 );
 
-flipButtonBack.click(function () {
-  $(this).parents($(".col-sm-4")).addClass("flipped");
-});
-
-flipButtonFront.click(function () {
-  $(this).removeClass("flipped");
+heroButton.click(function () {
+  $(".card-whole").removeClass("flipped");
 });
 
 villainButton.click(function () {
-  cardWhole.addClass("flipped");
+  $(".card-whole").addClass("flipped");
 });
 
 // search bar
@@ -141,7 +132,7 @@ form.submit(function () {
     cardBack.appendChild(backPar);
 
     //   // add card to row
-    $(".third-row").append(newDiv);
+    if ($(".row")) $(".row").append(newDiv);
 
     $(".card-whole").hover(
       function () {
