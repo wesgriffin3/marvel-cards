@@ -144,4 +144,6 @@ form.submit(function () {
     );
   });
   this.reset();
+
+  $(".row").removeClass("fill-space");
 });

@@ -1,7 +1,6 @@
 .jumbotron {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-bottom: 0;
+  padding: 20px 20px;
+  margin-bottom: 35px;
   background-image: url("https://wallpapercave.com/wp/wp2903360.jpg");
   background-size: 50%;
 }
@@ -20,6 +19,11 @@
   font-weight: 700;
   font-family: "Comic Neue", cursive;
   color: white;
+  text-shadow: black 4px 4px;
+}
+
+.jumbotron h5 {
+  text-shadow: black 2px 2px;
 }
 
 .jumbo-text {
@@ -29,6 +33,14 @@
 .jumbotron .container {
   max-width: 40rem;
   background-color: rgba(0, 0, 0, 0.452);
+}
+
+.fill-space {
+  margin-bottom: 500px;
+}
+
+form {
+  padding-bottom: 10px;
 }
 
 .card-body {
@@ -79,22 +91,15 @@ p {
   font-family: "Comic Neue", cursive;
 }
 
-li {
-  font-family: "Comic Neue", cursive;
-}
-
-ul {
-  margin: auto;
-  color: rgb(235, 235, 235);
-  list-style-type: none;
-  text-align: center;
-  margin-right: 35px;
-}
-
 .card-face {
   height: 100%;
   width: 100%;
   backface-visibility: hidden;
+}
+
+.description {
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .card-back {
@@ -109,13 +114,11 @@ ul {
   visibility: hidden;
 }
 
-.footer {
-  margin-top: -1000px;
-}
-
 footer {
-  padding-top: 100rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
+  background-color: grey;
+  margin-bottom: 0px;
 }
 
 footer p {
@@ -124,9 +127,4 @@ footer p {
 
 .footer-text {
   color: black;
-}
-
-.description {
-  min-width: 100%;
-  max-width: 100%;
 }
