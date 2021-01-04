@@ -33,7 +33,15 @@ form.submit(function () {
 
   // creates new card container
   const newDiv = document.createElement("div");
-  newDiv.className = "col-sm-4 entire-card";
+
+  var x = window.matchMedia("(max-width: 800px)");
+
+  // creates new mobile card container
+  if (x.matches) {
+    newDiv.className = "col-sm-8 entire card";
+  } else {
+    newDiv.className = "col-sm-4 entire-card";
+  }
 
   // give new card content
   const scene = document.createElement("div");
@@ -62,6 +70,7 @@ form.submit(function () {
   cardBack.className = "card-body";
 
   const backTitle = document.createElement("h3");
+  backTitle.className = "backTitle";
 
   const imgBack = document.createElement("img");
   imgBack.className = "card-img-back";

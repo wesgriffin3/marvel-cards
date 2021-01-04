@@ -49,6 +49,7 @@ form {
   background-color: rgb(34, 34, 34);
   max-height: 500px;
   min-height: 500px;
+  min-width: 350px;
   margin-bottom: 10px;
 }
 
@@ -71,6 +72,9 @@ form {
   height: 200px;
   margin-bottom: 10px;
   border: solid rgb(235, 235, 235) 1px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-img-back {
@@ -94,6 +98,10 @@ p {
   text-align: center;
   color: rgb(235, 235, 235);
   font-family: "Comic Neue", cursive;
+}
+
+.backTitle {
+  text-align: center;
 }
 
 .card-face {
@@ -122,7 +130,7 @@ p {
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: grey;
+  background-color: rgb(255, 238, 0);
   margin-bottom: 0px;
   margin-top: 50px;
 }
@@ -133,4 +141,13 @@ footer p {
 
 .footer-text {
   color: black;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 800px) {
+  .col-sm-8 {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
