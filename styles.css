@@ -47,6 +47,9 @@ form {
   border: solid black 1px;
   border-radius: 1rem;
   background-color: rgb(34, 34, 34);
+  max-height: 500px;
+  min-height: 500px;
+  margin-bottom: 10px;
 }
 
 .card-whole {
@@ -58,7 +61,7 @@ form {
 }
 
 .scene {
-  margin-bottom: 500px;
+  margin-bottom: 510px;
   perspective: 600px;
   display: flex;
 }
@@ -75,7 +78,9 @@ form {
   height: 250px;
   margin-bottom: 10px;
   border: solid rgb(235, 235, 235) 1px;
-  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h3 {
@@ -119,6 +124,7 @@ footer {
   padding-bottom: 3rem;
   background-color: grey;
   margin-bottom: 0px;
+  margin-top: 50px;
 }
 
 footer p {

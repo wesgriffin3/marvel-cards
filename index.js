@@ -132,7 +132,7 @@ form.submit(function () {
     cardBack.appendChild(backPar);
 
     //   // add card to row
-    if ($(".row")) $(".row").append(newDiv);
+    $(".row").append(newDiv);
 
     $(".card-whole").hover(
       function () {
