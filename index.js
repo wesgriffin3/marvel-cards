@@ -151,6 +151,9 @@ form.submit(function () {
         $(this).removeClass("flipped");
       }
     );
+    $(".entire-card").onClick(function () {
+      $(this).toggleClass("flipped");
+    });
   });
   this.reset();
 
