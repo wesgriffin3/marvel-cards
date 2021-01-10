@@ -49,7 +49,6 @@ form {
   background-color: rgb(34, 34, 34);
   max-height: 500px;
   min-height: 500px;
-  min-width: 350px;
   margin-bottom: 10px;
 }
 
@@ -111,13 +110,17 @@ p {
   -webkit-backface-visibility: hidden;
 }
 
-.description {
-  min-width: 100%;
-  max-width: 100%;
-}
-
 .card-back {
   transform: rotateY(180deg);
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.comic-desc-div {
+  height: 135px;
+  overflow-y: scroll;
 }
 
 .flipped {
@@ -131,7 +134,7 @@ p {
 footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: rgb(255, 238, 0);
+  background-color: rgb(34, 34, 34);
   margin-bottom: 0px;
   margin-top: 50px;
 }
@@ -141,7 +144,20 @@ footer p {
 }
 
 .footer-text {
-  color: black;
+  color: rgb(235, 235, 235);
+}
+
+a {
+  color: rgb(221, 0, 0);
+}
+
+a:hover {
+  color: rgb(221, 0, 0);
+}
+
+@keyframes falling {
+  0% {
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

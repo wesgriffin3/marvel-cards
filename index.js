@@ -75,7 +75,11 @@ form.submit(function () {
   const imgBack = document.createElement("img");
   imgBack.className = "card-img-back";
 
+  const backParDiv = document.createElement("div");
+  backParDiv.className = "comic-desc-div";
+
   const backPar = document.createElement("p");
+  backPar.className = "comic-description";
 
   // MARVEL API
   // KEYS:
@@ -93,7 +97,7 @@ form.submit(function () {
   const comicRequest = $.get(
     "https://gateway.marvel.com:443/v1/public/comics?title=" +
       userGivenHero +
-      "&ts=1609011803321&apikey=b138b6385cae17bddf0a3657ecf6e166&hash=1e3919c6ee1bde443c8ca31977cdf615"
+      "&ts=1609011803321&apikey=b138b6385cae17bddf0a3657ecf6e166&hash=1e3919c6ee1bde443c8ca31977cdf615&dateRange=1960-01-01%2C2013-01-02&orderBy=issueNumber"
   );
 
   // FRONT SIDE OF CARD
@@ -138,7 +142,8 @@ form.submit(function () {
     backSide.appendChild(cardBack);
     cardBack.appendChild(backTitle);
     cardBack.appendChild(imgBack);
-    cardBack.appendChild(backPar);
+    cardBack.appendChild(backParDiv);
+    backParDiv.append(backPar);
 
     //   // add card to row
     $(".row").append(newDiv);
@@ -151,7 +156,7 @@ form.submit(function () {
         $(this).removeClass("flipped");
       }
     );
-    $(".entire-card").onClick(function () {
+    $(".card-whole").click(function () {
       $(this).toggleClass("flipped");
     });
   });
