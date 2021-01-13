@@ -43,6 +43,10 @@ form {
   padding-bottom: 10px;
 }
 
+.btn {
+  margin-top: 10px;
+}
+
 .card-body {
   border: solid black 1px;
   border-radius: 1rem;
