@@ -1,8 +1,10 @@
 .jumbotron {
   padding: 20px 20px;
   margin-bottom: 35px;
-  background-image: url("https://wallpapercave.com/wp/wp2903360.jpg");
-  background-size: 50%;
+  background-image: url(marvel-background.jpeg);
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-position-y: center;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -32,7 +34,7 @@
 
 .jumbotron .container {
   max-width: 40rem;
-  background-color: rgba(0, 0, 0, 0.452);
+  background-color: rgba(0, 0, 0, 0.76);
 }
 
 .fill-space {
@@ -122,9 +124,26 @@ p {
   -webkit-backface-visibility: hidden;
 }
 
-.comic-desc-div {
-  height: 135px;
+.descriptions {
+  margin-top: 20px;
+  text-align: center;
+  height: 175px;
   overflow-y: scroll;
+}
+
+.back-descriptions {
+  text-align: center;
+  height: 150px;
+  overflow-y: scroll;
+}
+
+.delete-button {
+  float: right;
+  margin-top: -10px;
+}
+
+.delete-button:hover {
+  color: white;
 }
 
 .flipped {

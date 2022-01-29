@@ -7,14 +7,9 @@ const cardWhole = $(".card-whole");
 
 const btnGroup = $(".btn-group");
 
-$(".card-whole").hover(
-  function () {
-    $(this).addClass("flipped");
-  },
-  function () {
-    $(this).removeClass("flipped");
-  }
-);
+$(".card-whole").click(function () {
+  $(this).toggle(addClass("flipped"));
+});
 
 heroButton.click(function () {
   $(".card-whole").removeClass("flipped");
@@ -62,6 +57,7 @@ form.submit(function () {
   img.className = "card-img";
 
   const par = document.createElement("p");
+  par.className = "descriptions";
 
   const backSide = document.createElement("div");
   backSide.className = "card-face card-back";
@@ -76,10 +72,14 @@ form.submit(function () {
   imgBack.className = "card-img-back";
 
   const backParDiv = document.createElement("div");
-  backParDiv.className = "comic-desc-div";
+  backParDiv.className = "back-descriptions";
 
   const backPar = document.createElement("p");
-  backPar.className = "comic-description";
+  backPar.className = "back-descriptions";
+
+  const deleteButton = document.createElement("p");
+  deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+  deleteButton.className = "delete-button";
 
   // MARVEL API
   // KEYS:
@@ -119,6 +119,7 @@ form.submit(function () {
       imgBack.src =
         randomComic.images[0].path + "." + randomComic.images[0].extension;
       backTitle.append(randomComic.title);
+      backTitle.append(deleteButton);
       backPar.append(randomComic.description);
     });
 
@@ -148,14 +149,6 @@ form.submit(function () {
     //   // add card to row
     $(".row").append(newDiv);
 
-    $(".card-whole").hover(
-      function () {
-        $(this).addClass("flipped");
-      },
-      function () {
-        $(this).removeClass("flipped");
-      }
-    );
     $(".card-whole").click(function () {
       $(this).toggleClass("flipped");
     });
@@ -163,4 +156,10 @@ form.submit(function () {
   this.reset();
 
   $(".row").removeClass("fill-space");
+});
+
+// delete card
+
+$(".delete-button").click(function () {
+  alert("Handler for .click() called.");
 });
