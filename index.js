@@ -7,9 +7,14 @@ const cardWhole = $(".card-whole");
 
 const btnGroup = $(".btn-group");
 
-$(".card-whole").click(function () {
-  $(this).toggle(addClass("flipped"));
-});
+$(".card-whole").hover(
+  function () {
+    $(this).addClass("flipped");
+  },
+  function () {
+    $(this).removeClass("flipped");
+  }
+);
 
 heroButton.click(function () {
   $(".card-whole").removeClass("flipped");
@@ -149,6 +154,14 @@ form.submit(function () {
     //   // add card to row
     $(".row").append(newDiv);
 
+    $(".card-whole").hover(
+      function () {
+        $(this).addClass("flipped");
+      },
+      function () {
+        $(this).removeClass("flipped");
+      }
+    );
     $(".card-whole").click(function () {
       $(this).toggleClass("flipped");
     });
