@@ -86,22 +86,23 @@
     ></script>
   </head>
   <body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-dark">
+      <span class="navbar-brand mb-0 h1">Marvel Trading Cards</span>
+    </nav>
     <main role="main">
       <section class="jumbotron text-center">
         <div class="container">
-          <h1>Marvel Trading Cards</h1>
-          <h5 class="jumbo-text">
-            Search for your favorite Marvel hero or villain.
-          </h5>
-          <p>
-            <a id="heroButton" class="btn btn-primary my-2">Hero</a>
-            <a id="villainButton" class="btn btn-danger my-2">Comic</a>
-          </p>
           <form onsubmit="return false">
-            <input type="text" id="searchbar" placeholder="Search" />
+            <input type="text" id="searchbar" placeholder="Enter hero's name" />
             <br />
             <button type="submit" class="btn btn-dark">Search</button>
           </form>
+          <p>
+            (DISCLAIMER: Marvel's API is not perfect, it has missing info, such
+            as Spider-Man himself, Deadpool's description, some comic summaries,
+            etc.)
+          </p>
         </div>
       </section>
     </main>

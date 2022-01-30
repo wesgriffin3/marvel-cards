@@ -172,7 +172,3 @@ form.submit(function () {
 });
 
 // delete card
-
-$(".delete-button").click(function () {
-  alert("Handler for .click() called.");
-});
